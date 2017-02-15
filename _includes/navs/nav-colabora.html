@@ -1,0 +1,43 @@
+
+<nav class="button-nav">
+{% if page.url contains '/colabora/donativos/' %}
+  {% include button.html
+    class="button active"
+    href="/colabora/donativos/"
+    title="Donativos"
+    name="Donativos"
+  %}
+  {% include button.html
+    class="button"
+    href="/colabora/donaciones/"
+    title="Donaciones"
+    name="Donaciones"
+  %}
+{% elsif page.url contains '/colabora/donaciones/' %}
+  {% include button.html
+    class="button"
+    href="/colabora/donativos/"
+    title="Donativos"
+    name="Donativos"
+  %}
+  {% include button.html
+    class="button active"
+    href="/colabora/donaciones/"
+    title="Donaciones"
+    name="Donaciones"
+  %}
+{% elsif page.url contains '/colabora/' %}
+  {% include button.html
+    class="button"
+    href="/colabora/donativos/"
+    title="Donativos"
+    name="Donativos"
+  %}
+  {% include button.html
+    class="button"
+    href="/colabora/donaciones/"
+    title="Donaciones"
+    name="Donaciones"
+  %}
+{% endif %}
+</nav>

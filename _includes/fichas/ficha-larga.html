@@ -1,0 +1,46 @@
+<!-- PARA AÑADIR DEBAJO DE CADA FICHA DE PERRO -->
+
+<figure class="perros-figure">
+  <img class="perros-cabecera" src="{{ page.cabecera | relative_url }}" alt="Imagen de {{ page.nombre }}">
+  <figcaption>Foto de {{ page.nombre }}</figcaption>
+</figure>
+
+<p>Hola mi nombre es <b>{{ page.nombre }}</b>!!!</p>
+
+<p>Soy un <b>{{ page.raza }} {{ page.sexo }}</b>, de color <b>{{ page.color }}</b>, he nacido el <b>{{ page.nacimiento }}</b>.</p>
+
+<ul>
+  <li><b>Entrada: </b>{{ page.entrada }}</li>
+  <li><b>Origen: </b>{{ page.origen }}</li>
+  <li><b>Situación: </b>{{ page.situacion }}</li>
+  <li><b>Chip: </b>{{ page.chip }}</li>
+  <li><b>Castrado: </b>{{ page.castrado }}</li>
+  <li><b>Enfermedades: </b>{{ page.enfermedades }}</li>
+  <li>
+    <b>Caracter:</b>
+    <li><b>Compatible con: </b>{{ page.caracter.compatible }}</li>
+    <li><b>Actividad: </b>{{ page.caracter.actividad }}</li>
+    <li><b>Miedos: </b>{{ page.caracter.miedos }}</li>
+    <li><b>Manías: </b>{{ page.caracter.manias }}</li>
+  </li>
+</ul>
+
+<p>{{ page.historia }}</p>
+
+<nav class="home-nav button-nav">
+{% if page.adopta == true %}
+  {% include button.html
+    class="button home-button"
+    href="#"
+    title="Adóptame"
+    name="Adóptame"
+  %}
+{% elsif page.apadrina == true %}
+  {% include button.html
+    class="button home-button"
+    href="#"
+    title="Apadriname"
+    name="Apadriname"
+  %}
+{% endif %}
+</nav>

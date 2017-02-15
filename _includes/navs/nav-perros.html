@@ -1,0 +1,43 @@
+
+<nav class="button-nav">
+{% if page.url contains '/perros/adopta/' %}
+  {% include button.html
+    class="button active"
+    href="/perros/adopta/"
+    title="Adopta"
+    name="Adopta"
+  %}
+  {% include button.html
+    class="button"
+    href="/perros/apadrina/"
+    title="Apadrina"
+    name="Apadrina"
+  %}
+{% elsif page.url contains '/perros/apadrina/' %}
+  {% include button.html
+    class="button"
+    href="/perros/adopta/"
+    title="Adopta"
+    name="Adopta"
+  %}
+  {% include button.html
+    class="button active"
+    href="/perros/apadrina/"
+    title="Apadrina"
+    name="Apadrina"
+  %}
+{% elsif page.url contains '/perros/' %}
+  {% include button.html
+    class="button"
+    href="/perros/adopta/"
+    title="Adopta"
+    name="Adopta"
+  %}
+  {% include button.html
+    class="button"
+    href="/perros/apadrina/"
+    title="Apadrina"
+    name="Apadrina"
+  %}
+{% endif %}
+</nav>

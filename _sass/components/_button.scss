@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+// button
+
+.button-nav {
+  display: flex;
+  @extend %vertical-rhythm;
+  span {
+
+    flex: 1 1 auto;
+    border: 1px solid $grey-color;
+    background-color: $grey-color-light;
+    &:not(:last-child) {
+      border-right: none;
+    }
+    .active {
+      border-bottom-color: rgb(255,111,255);
+    }
+  }
+}
+
+.button {
+  padding: 0.50em 0;
+  display: block;
+  margin: 0 0.50em 0.25em;
+  border-bottom: 3px solid $grey-color;
+  font-size: 1.2em;
+  text-align: center;
+  &,
+  &:hover {
+    text-decoration: none;
+    color: $brand-color;
+  }
+}

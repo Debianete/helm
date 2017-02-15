@@ -1,0 +1,24 @@
+- name: Emma
+  fullname: Emma Pérez
+  position: Presidenta
+  avatar: /assets/images/members/female.svg
+
+- name: Sara
+  fullname: Sarabel Blablabla
+  position: Vicepresidenta
+  avatar: /assets/images/members/female.svg
+
+- name: Dani
+  fullname: Daniel Blablabla
+  position: Tesorero
+  avatar: /assets/images/members/male.svg
+  
+- name: Montse
+  fullname: Montserrat Blablabla
+  position: Secretaria
+  avatar: /assets/images/members/female.svg
+  
+- name: Antonio
+  fullname: Antonio Blablabla
+  position: Vocal de Honor
+  avatar: /assets/images/members/male.svg

@@ -1,0 +1,61 @@
+---
+layout: page
+title: Adopta por Razas
+permalink: /perros/adopta/
+---
+
+{% assign adopta = site.perros | where: "adopta", "true" %}
+{% assign groups = adopta | group_by: "raza" %}
+
+{% for group in groups %}
+    <h2>{{ group.name }}</h2>
+    <section class="articles">
+      <ul class="articles--list">
+
+
+
+
+    {% for perro in group.items %}
+    <article class="articles--list__item">
+      <h2 class="perros-title">
+        <a class="perros-link" href="{{ perro.url }}" title="{{ perro.nombre }}">
+          <span class="perros-name">{{ perro.nombre }}</span>
+          <img class="perros-logo" src="{{ perro.image | relative_url }}" alt="Imagen con la cara de {{ perro.nombre }}" width="128" height="128">
+        </a>
+      </h2>
+      <ul class="perros-short-data">
+        <li><b>Sexo:</b> {{ perro.sexo }}</li>
+        <li><b>Raza:</b> {{ perro.raza }}</li>
+        <li><b>Nacido:</b> {{ perro.nacimiento }}</li>
+        <li><b>Entrada:</b> {{ perro.entrada }}</li>
+        <li><b>Origen:</b> {{ perro.origen }}</li>
+        <li><b>Situación:</b> {{ perro.situacion }}</li>
+      </ul>
+    </article>
+    {% endfor %}
+    </ul>
+    </section>
+{% endfor %}
+
+
+<!-- {% assign perros = site.perros | sort:"order" %}
+{% for perro in perros %}
+{% if perro.adopta == true %}
+<article class="perros-article">
+  <h2 class="perros-title">
+    <a class="perros-link" href="{{ perro.url }}" title="{{ perro.nombre }}">
+      <span class="perros-name">{{ perro.nombre }}</span>
+      <img class="perros-logo" src="{{ perro.image | relative_url }}" alt="Imagen con la cara de {{ perro.nombre }}" width="128" height="128">
+    </a>
+  </h2>
+  <ul class="perros-short-data">
+    <li><b>Sexo:</b> {{ perro.sexo }}</li>
+    <li><b>Raza:</b> {{ perro.raza }}</li>
+    <li><b>Nacido:</b> {{ perro.nacimiento }}</li>
+    <li><b>Entrada:</b> {{ perro.entrada }}</li>
+    <li><b>Origen:</b> {{ perro.origen }}</li>
+    <li><b>Situación:</b> {{ perro.situacion }}</li>
+  </ul>
+</article>
+{% endif %}
+{% endfor %} -->
