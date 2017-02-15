@@ -18,7 +18,7 @@ permalink: /perros/adopta/
     {% for perro in group.items %}
     <article class="articles--list__item">
       <h2 class="perros-title">
-        <a class="perros-link" href="{{ perro.url }}" title="{{ perro.nombre }}">
+        <a class="perros-link" href="{{ perro.url | relative_url }}" title="{{ perro.nombre }}">
           <span class="perros-name">{{ perro.nombre }}</span>
           <img class="perros-logo" src="{{ perro.image | relative_url }}" alt="Imagen con la cara de {{ perro.nombre }}" width="128" height="128">
         </a>
