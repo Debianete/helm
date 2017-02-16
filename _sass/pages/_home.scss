@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
 
-  background: rgb(255,111,255) url("/assets/images/255-111-255.svg") no-repeat center;
+  background: rgb(255,111,255) url({{ "/assets/images/255-111-255.svg" | relative_url }}) no-repeat center;
   background-size: cover;
 
   overflow: hidden;
