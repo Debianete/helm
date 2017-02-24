@@ -38,12 +38,14 @@
 <p>{{ page.historia | escape }}</p>
 
 <div>
+  {% if page.adopta or page.apadrina or page.acogida %}
   <a class="btn" href="#formulario" title="{% if page.adopta %}Adoptar a {{ page.nombre | escape }}{% elsif page.apadrina %}Apadrinar a {{ page.nombre | escape }}{% elsif page.acogida %}Acoger a {{ page.nombre | escape }}{% endif %}">
   {% if page.adopta %}Adoptar a {{ page.nombre | escape }}
   {% elsif page.apadrina %}Apadrinar a {{ page.nombre | escape }}
   {% elsif page.acogida %}Acoger a {{ page.nombre | escape }}
   {% endif %}
   </a>
+  {% endif %}
   {% if page.galeria %}
   <a class="btn" href="{{ site.baseurl }}/perros/galerias/{{ page.nombre | downcase | escape }}" title="Galeria de {{ page.nombre | escape }}">
   Galeria de {{ page.nombre | escape }}
