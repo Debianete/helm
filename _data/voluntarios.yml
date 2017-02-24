@@ -1,0 +1,24 @@
+- name: Sebas
+  fullname: Sebas-tian Timao
+  tarea: Limpieza
+  avatar: /assets/images/members/male.svg
+
+- name: Masca
+  fullname: Masca Broncete
+  tarea: Mantenimiento
+  avatar: /assets/images/members/male.svg
+
+- name: Aitor
+  fullname: Aitor Tilla
+  tarea: Stand
+  avatar: /assets/images/members/male.svg
+
+- name: Dani
+  fullname: Daniel Blablabla
+  tarea: Limpieza
+  avatar: /assets/images/members/male.svg
+
+- name: Montse
+  fullname: Montserrat Blablabla
+  tarea: Paseadora
+  avatar: /assets/images/members/female.svg

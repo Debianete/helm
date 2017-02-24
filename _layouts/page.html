@@ -1,23 +1,13 @@
 ---
 layout: default
 ---
-<article class="post">
 
-  <header class="post-header">
-  {% if page.url contains '/conocenos/' %}
-    {% include navs/nav-conocenos.html %}
-  {% endif %}
-  {% if page.url contains '/perros/' %}
-    {% include navs/nav-perros.html %}
-  {% endif %}
-  {% if page.url contains '/colabora/' %}
-    {% include navs/nav-colabora.html %}
-  {% endif %}
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+<article class="">
+
+  <header class="{{ page.section | downcase | escape }}">
+    <h1 class="">{{ page.section | escape }}</h1>
   </header>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+  {{ content }}
 
 </article>

@@ -1,0 +1,41 @@
+---
+layout: perros
+title: Acoger
+section: Perros
+permalink: /perros/acoger/
+excerpt: >
+  Lorem ipsum dolor sit amet,
+  consectetur adipisicing elit,
+  sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua.
+---
+
+<h2>{{ page.title | escape }}</h2>
+
+{% assign perros = site.perros | sort: "order" %}
+{% for perro in perros %}
+{% if perro.acogida %}
+<article class="">
+  <h3 class="">
+    <a class="" href="{{ perro.url | relative_url }}" title="{{ perro.nombre | escape }}">
+      <img
+        class=""
+        src="{{ perro.avatar | relative_url }}"
+        alt="Imagen con la cara de {{ perro.nombre | escape }}"
+        title="Imagen con la cara de {{ perro.nombre | escape }}"
+        width="128"
+        height="128">
+      <span class="">{{ perro.nombre | escape }}</span>
+    </a>
+  </h3>
+  <ul class="">
+    <li><b>Sexo:</b> {{ perro.sexo | escape }}</li>
+    <li><b>Raza:</b> {{ perro.raza | escape }}</li>
+    <li><b>Tamaño:</b> {{ perro.talla | escape }}</li>
+    <li><b>Nacido:</b> {{ perro.nacimiento | escape }}</li>
+    <li><b>Entrada:</b> {{ perro.entrada | escape }}</li>
+    <li><b>Situación:</b> {{ perro.situacion | escape }}</li>
+  </ul>
+</article>
+{% endif %}
+{% endfor %}

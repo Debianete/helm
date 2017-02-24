@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "es-ES" }}">
+<html lang="{{ page.lang | default: site.lang | default: "es" }}">
 
   {% include head.html %}
 
-  {% if page.url == "/" %}
+  <body>
 
-  <body class="home">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    {% if page.url == '/' %}
 
-    <main class="main absolute-center">
+    <main class="mainHome absoluteCenter">
       {{ content }}
     </main>
 
+    {% elsif page.url contains 'galerias' %}
+    {% include header.html class="mainHeader glass" %}
+    <main class="mainGaleria">
+      {{ content }}
+    </main>
+
+    {% else %}
+
+    {% include header.html class="mainHeader" %}
+
+    <main class="mainSite" aria-label="Content">
+      <section class="container">
+        {{ content }}
+      </section>
+    </main>
+
+    {% include footer.html %}
+
+    {% endif %}
+
   </body>
-
-  {% else %}
-
-  <body>
-
-    <div class="main">
-      {% include header.html %}
-
-      <main class="page-content" aria-label="Content">
-
-        <div class="wrapper">
-          {{ content }}
-        </div>
-
-      </main>
-    </div>
-
-    <!-- {% include footer.html %} -->
-
-  </body>
-
-  {% endif %}
 
 </html>

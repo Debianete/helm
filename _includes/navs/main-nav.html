@@ -1,0 +1,7 @@
+
+<nav class="mainNav">
+  {% for item in site.main-nav %}
+  <a class="navLink {% if page.url contains item[1] %}active{% endif %}" href="{{ item[1] | relative_url }}" title="{{ item[0] | escape }}">{{ item[0] | escape }}</a>
+  {% endfor %}
+  <a class="navLink" href="//google.es" title="Tienda" target="_blank">Tienda</a>
+</nav>

@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the gallery page.
+// -----------------------------------------------------------------------------
+
+/**
+ * Styles for gallery container
+ * use like this: <main class="mainGaleria"><article class="articleGaleria"><img class="imgGaleria" /><p><a class="btn">Down</a></p><etc..../></article></main>
+ */
+.mainGaleria {
+  background: linear-gradient(to bottom right, $brand-color, $brand-color-comp);
+  z-index: -2;
+  -webkit-scroll-snap-type: proximity;
+  -webkit-scroll-snap-points-y: repeat(100%);
+}
+
+/**
+ * Styles for gallery sections
+ */
+.headerGaleria,
+.articleGaleria {
+  text-align: center;
+  color: $white;
+  text-shadow: 1px 1px 1px $text-color;
+  position: relative;
+  min-height: 100vh;
+  padding: 4rem;
+}
+
+/**
+ * Styles for pictures containers
+ */
+.articleGaleria:nth-child(odd) {
+  background: rgba(darken($brand-color-comp, 10%), 0.3);
+  text-shadow: 3px 3px 3px $brand-color;
+}
+
+.articleGaleria:nth-child(even) {
+  background: rgba(darken($brand-color-cont, 10%), 0.3);
+  text-shadow: 3px 3px 3px $brand-color;
+}
+
+/**
+ * Styles for <img> tags
+ */
+.imgGaleria {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}

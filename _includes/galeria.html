@@ -1,0 +1,19 @@
+<header class="absoluteCenter headerGaleria">
+  <h1>Galeria de {{ page.nombre | escape }}</h1>
+  <p>{{ page.description | escape }}</p>
+</header>
+
+{% for foto in page.fotos %}
+<article class="absoluteCenter articleGaleria">
+  <img
+    class="imgGaleria"
+    src="{{ foto.source | relative_url }}"
+    alt="{{ foto.title | escape }}"
+    title="{{ foto.title | escape }}">
+  <h2>{{ foto.title | escape }}</h2>
+  <p>{{ foto.m | escape }}, {{ foto.y | escape }}</p>
+  <p>
+    <a class="btn" href="{{ foto.source | relative_url }}" title="Download" download="{{ foto.title | escape }}">Download</a>
+  </p>
+</article>
+{% endfor %}

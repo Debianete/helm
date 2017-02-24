@@ -1,0 +1,38 @@
+---
+layout: about
+title: Socios
+section: Home
+permalink: /about/socios/
+---
+
+<h2>{{ page.title | escape }}</h2>
+
+<p>En la actualidad
+  <b>{{ site.title | escape }}</b>
+  cuenta con
+  <b>{{ site.data.socios | size }}</b>
+  socios.
+</p>
+
+<a class="btn" href="{{ "/colabora/socios/" | relative_url }}" title="Hazte Socio">Hazte Socio</a>
+
+<section class="">
+  <ul class="">
+    {% for socio in site.data.socios %}
+    <li class="">
+      <img
+        class=""
+        src="{{ socio.avatar | relative_url }}"
+        alt="Foto de {{ socio.name | escape }}"
+        title="Foto de {{ socio.name | escape }}"
+        width="96"
+        height="96">
+      <h3 class="">
+        {{ socio.name | escape }}
+      </h3>
+      <p><b>Nombre:</b> {{ socio.fullname | escape }}</p>
+      <p><b>Número:</b> {{ socio.numero | escape }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

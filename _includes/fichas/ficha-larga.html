@@ -1,46 +1,60 @@
 <!-- PARA AÑADIR DEBAJO DE CADA FICHA DE PERRO -->
 
-<figure class="perros-figure">
-  <img class="perros-cabecera" src="{{ page.cabecera | relative_url }}" alt="Imagen de {{ page.nombre }}">
-  <figcaption>Foto de {{ page.nombre }}</figcaption>
+<h2>Hola soy {{ page.nombre | escape }}!!!</h2>
+
+<figure class="polaroidFrame">
+  <img
+    class="polaroidImg"
+    src="{{ page.cabecera | relative_url }}"
+    alt="Imagen de {{ page.nombre | escape }}"
+    title="Imagen de {{ page.nombre | escape }}">
+  <figcaption class="polaroidTitle">Foto de {{ page.nombre | escape }}</figcaption>
 </figure>
 
-<p>Hola mi nombre es <b>{{ page.nombre }}</b>!!!</p>
+<p>Mi nombre es <b>{{ page.nombre | escape }}</b>!!!</p>
 
-<p>Soy un <b>{{ page.raza }} {{ page.sexo }}</b>, de color <b>{{ page.color }}</b>, he nacido el <b>{{ page.nacimiento }}</b>.</p>
+<p>Soy un <b>{{ page.raza | escape }} {{ page.sexo | escape }}</b>, de tamaño <b>{{ page.talla | escape }}</b>,
+  de color <b>{{ page.color | escape }}</b>y he nacido el <b>{{ page.nacimiento | escape }}</b>.</p>
 
 <ul>
-  <li><b>Entrada: </b>{{ page.entrada }}</li>
-  <li><b>Origen: </b>{{ page.origen }}</li>
-  <li><b>Situación: </b>{{ page.situacion }}</li>
-  <li><b>Chip: </b>{{ page.chip }}</li>
-  <li><b>Castrado: </b>{{ page.castrado }}</li>
-  <li><b>Enfermedades: </b>{{ page.enfermedades }}</li>
+  <li><b>Entrada: </b>{{ page.entrada | escape }}</li>
+  <li><b>Origen: </b>{{ page.origen | escape }}</li>
+  <li><b>Situación: </b>{{ page.situacion | escape }}</li>
+  <li><b>Chip: </b>{{ page.chip | escape }}</li>
+  <li><b>Castrado: </b>{{ page.castrado | escape }}</li>
+  <li><b>Enfermedades: </b>{{ page.enfermedades | escape }}</li>
   <li>
     <b>Caracter:</b>
-    <li><b>Compatible con: </b>{{ page.caracter.compatible }}</li>
-    <li><b>Actividad: </b>{{ page.caracter.actividad }}</li>
-    <li><b>Miedos: </b>{{ page.caracter.miedos }}</li>
-    <li><b>Manías: </b>{{ page.caracter.manias }}</li>
+    <ul>
+      <li><b>Compatible con: </b>{{ page.caracter.compatible | escape }}</li>
+      <li><b>Actividad: </b>{{ page.caracter.actividad | escape }}</li>
+      <li><b>Miedos: </b>{{ page.caracter.miedos | escape }}</li>
+      <li><b>Manías: </b>{{ page.caracter.manias | escape }}</li>
+    </ul>
   </li>
 </ul>
 
-<p>{{ page.historia }}</p>
+<h3>Esta es mi Historia</h3>
+<p>{{ page.historia | escape }}</p>
 
-<nav class="home-nav button-nav">
-{% if page.adopta == true %}
-  {% include button.html
-    class="button home-button"
-    href="#"
-    title="Adóptame"
-    name="Adóptame"
-  %}
-{% elsif page.apadrina == true %}
-  {% include button.html
-    class="button home-button"
-    href="#"
-    title="Apadriname"
-    name="Apadriname"
-  %}
+<div>
+  <a class="btn" href="#formulario" title="{% if page.adopta %}Adoptar a {{ page.nombre | escape }}{% elsif page.apadrina %}Apadrinar a {{ page.nombre | escape }}{% elsif page.acogida %}Acoger a {{ page.nombre | escape }}{% endif %}">
+  {% if page.adopta %}Adoptar a {{ page.nombre | escape }}
+  {% elsif page.apadrina %}Apadrinar a {{ page.nombre | escape }}
+  {% elsif page.acogida %}Acoger a {{ page.nombre | escape }}
+  {% endif %}
+  </a>
+  {% if page.galeria %}
+  <a class="btn" href="{{ site.baseurl }}/perros/galerias/{{ page.nombre | downcase | escape }}" title="Galeria de {{ page.nombre | escape }}">
+  Galeria de {{ page.nombre | escape }}
+  </a>
+  {% endif %}
+</div>
+
+{% if page.adopta %}
+{% include formularios/perros.html nuevo="adoptar" %}
+{% elsif page.apadrina %}
+{% include formularios/perros.html nuevo="apadrinar" %}
+{% elsif page.acogida %}
+{% include formularios/perros.html nuevo="acoger" %}
 {% endif %}
-</nav>

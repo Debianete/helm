@@ -1,21 +1,28 @@
 <!-- PARA AÑADIR EN LOS POSTS O LAS PAGINAS UN SOLO PERRO -->
 
 {% for perro in site.perros %}
-{% if perro.nombre == {{include.nombre}} %}
-<article class="perros-article">
-  <h2 class="perros-title">
-    <a class="perros-link" href="{{ perro.url }}" title="{{ perro.nombre }}">
-      <img class="perros-logo" src="{{ perro.image | relative_url }}" alt="Imagen con la cara de {{ perro.nombre }}" width="128" height="128">
-      {{ perro.nombre }}
+{% if perro.nombre == {{include.nombre | escape }} %} <!-- el include pegadito para que funcione -->
+<article class="">
+  <h2 class="">
+    <a class="" href="{{ perro.url | relative_url }}" title="{{ perro.nombre | escape }}">
+      <img
+        class=""
+        src="{{ perro.avatar | relative_url }}"
+        alt="Imagen con la cara de {{ perro.nombre | escape }}"
+        title="Imagen con la cara de {{ perro.nombre | escape }}"
+        width="128"
+        height="128">
+      {{ perro.nombre | escape }}
     </a>
   </h2>
-  <ul class="perros-short-data">
-    <li><b>Sexo:</b> {{ perro.sexo }}</li>
-    <li><b>Raza:</b> {{ perro.raza }}</li>
-    <li><b>Nacido:</b> {{ perro.nacimiento }}</li>
-    <li><b>Entrada:</b> {{ perro.entrada }}</li>
-    <li><b>Origen:</b> {{ perro.origen }}</li>
-    <li><b>Situación:</b> {{ perro.situacion }}</li>
+  <ul class="">
+    <li><b>Sexo:</b> {{ perro.sexo | escape }}</li>
+    <li><b>Raza:</b> {{ perro.raza | escape }}</li>
+    <li><b>Tamaño:</b> {{ perro.talla | escape }}</li>
+    <li><b>Nacido:</b> {{ perro.nacimiento | escape }}</li>
+    <li><b>Entrada:</b> {{ perro.entrada | escape }}</li>
+    <li><b>Origen:</b> {{ perro.origen | escape }}</li>
+    <li><b>Situación:</b> {{ perro.situacion | escape }}</li>
   </ul>
 </article>
 {% endif %}

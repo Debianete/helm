@@ -1,0 +1,20 @@
+---
+layout: blog
+title: Artículos del Blog
+section: Blog
+permalink: /blog/articulos/
+---
+
+<ul class="">
+  {% for post in site.posts %}
+    <li>
+      <span class="">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="" href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title | escape }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>
+
+<p class="">subscribe <a class="" href="{{ "/feed.xml" | relative_url }}" title="Siguenos por RSS">via RSS</a></p>

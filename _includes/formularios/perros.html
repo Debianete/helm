@@ -1,0 +1,12 @@
+<h2 id="formulario">Formulario {{ include.nuevo | escape }}</h2>
+
+<form method="post" action="archivo_de_envio_{{ include.nuevo | escape }}.php">
+  <input id="name" type="text" name="nombre" placeholder="* Nombre " />
+  <input id="email" type="email" name="email" placeholder="* Email " />
+  <input id="dog-name" type="text" name="nombrePerro" placeholder="{{ page.nombre | escape }}" readonly="readonly" />
+  <input id="dog-id" type="text" name="raza" placeholder="{{ page.raza | escape }}" readonly="readonly" />
+  <textarea id="message" name="mensaje" rows="8">
+    Estoy interesado/a en {{ include.nuevo | escape }} a {{ page.nombre | escape }} de la raza {{ page.raza | escape }} bla bla bla ...
+  </textarea>
+  <input id="send" type="submit" value="Quiero {{ include.nuevo | capitalize | escape }}" />
+</form>

@@ -32,15 +32,18 @@
   }
 }
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (min-width: $device) {
-        @content;
+/// http://soyfrontend.com/aprende-usar-los-sass-maps/
+/// @include mq('small') {
+///   display: none;
+/// }
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media screen and (#{$type}-width: $width) {
+            @content;
+        }
     }
 }

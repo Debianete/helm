@@ -2,27 +2,84 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-// Fonts
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
-$base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
 
-// Layout
-$spacing-unit:     30px !default;
 
-// Width of the content area
-$content-width:    800px !default;
 
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
 
-// Theme
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Code (headings) font family
+/// @type List
+$headings-font-stack: 'Courier New', 'DejaVu Sans Mono', monospace !default;
+
+
+/// Copy text color
+/// @type Color
+$text-color: #2c3e50 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #34495e !default;
+
+/// Complementary brand color
+/// @type Color
+$brand-color-comp: rgb(51, 187, 255) !default;
+
+/// Contarst brand color
+/// @type Color
+$brand-color-cont: rgb(187, 255, 51) !default;
+
+/// WWhite
+/// @type Color
+$white: #fff !default;
+
+/// Light ggrey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium ggrey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark ggrey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 480px,
+  'medium': 768px,
+  'large': 1024px,
+  'x-large': 1600px,
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

@@ -8,7 +8,8 @@
 
 // 2. Vendors
 @import
-  'vendor/normalize';
+  'vendor/normalize',
+  'vendor/animate';
 
 // 3. Base stuff
 @import
@@ -25,20 +26,14 @@
 
 // 5. Components
 @import
-  'components/fichas',
-  'components/articles',
-  'components/button';
+  'components/button',
+  'components/figures';
 
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/pages',
-  'pages/posts';
+  'pages/galeria';
 
 // 7. Themes
 @import
   'themes/default';
-
-// 2-a. Vendors
-@import
-  'vendor/syntax-highlighting';

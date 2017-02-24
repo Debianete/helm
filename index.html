@@ -1,22 +1,18 @@
 ---
 layout: default
 ---
+<article>
+  <img
+    class="animated bounceInRight"
+    src="{{ "/assets/images/logo.svg" | relative_url }}"
+    alt="Logo {{ site.banner | escape }}"
+    title="Logo {{ site.banner | escape }}"
+    width="320"
+    height="240">
 
-<h1 class="home-title animated slideInLeft">Huellas en la Montaña</h1>
+  <h1 class="animated bounceInLeft">{{ site.banner | escape }}</h1>
 
-{% include figures/image.html
-  class="logo-home animated bounceIn"
-  src="/assets/images/logo.svg"
-  alt="Logo Huellas"
-  title="Huellas en la Montaña"
-  width="256"
-%}
-
-<nav class="home-nav button-nav animated slideInRight">
-  {% include button.html
-    class="home-button"
-    href="/conocenos/"
-    title="Que Hacemos"
-    name="Conócenos"
-  %}
-</nav>
+  <p>
+    <a class="btn animated pulse infinite" href="{{ "/about/" | relative_url }}" title="Conócenos">Conócenos</a>
+  </p>
+</article>

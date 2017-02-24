@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the figures component.
+// -----------------------------------------------------------------------------
+
+/**
+ * Styles for polaroid photos
+ * use like this: <figure class="polaroidFrame"><img class="polaroidImg"/><figcaption class"polaroidTitle"></figcaption></figure>
+ */
+.polaroidFrame {
+  border-radius: 5px;
+  padding: 0.50rem;
+  border: 1px solid $text-color;
+  box-shadow: 0 5px 8px rgba($text-color, 0.5);
+}
+
+.polaroidImg {
+  border-radius: 5px;
+  border: 1px solid $text-color;
+}
+
+.polaroidTitle {
+  font-family: serif;
+}

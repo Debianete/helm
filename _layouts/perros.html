@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+{% include navs/perros-nav.html %}
+
+  {% if page.url contains '/perros/adoptar/' %}
+
+    {% include navs/adoptar-nav.html %}
+
+  {% elsif page.url contains '/perros/apadrinar/' %}
+
+    {% include navs/apadrinar-nav.html %}
+
+  {% endif %}
+
+<div class="">
+
+  {{ content }}
+
+</div>

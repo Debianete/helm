@@ -1,0 +1,50 @@
+---
+layout: perros
+title: Adoptar por Razas
+section: Perros
+permalink: /perros/adoptar/razas/
+excerpt: >
+  Excepteur sint occaecat
+  cupidatat non proident,
+  sunt in culpa qui officia
+  deserunt mollit anim id
+  est laborum.
+---
+
+<h2>{{ page.title | escape }}</h2>
+
+{% assign adopta = site.perros | where: "adopta", "true" | sort: "order" %}
+{% assign groups = adopta | group_by: "raza" %}
+
+{% for group in groups %}
+    <h3 class="">{{ group.name | escape }}</h3>
+    <section class="">
+      <ul class="">
+
+    {% for perro in group.items %}
+    <article class="">
+      <h4 class="">
+        <a class="" href="{{ perro.url | relative_url }}" title="{{ perro.nombre | escape }}">
+          <img
+            class=""
+            src="{{ perro.avatar | relative_url }}"
+            alt="Imagen con la cara de {{ perro.nombre | escape }}"
+            title="Imagen con la cara de {{ perro.nombre | escape }}"
+            width="128"
+            height="128">
+          <span class="">{{ perro.nombre | escape }}</span>
+        </a>
+      </h4>
+      <ul class="">
+        <li><b>Sexo:</b> {{ perro.sexo | escape }}</li>
+        <li><b>Raza:</b> {{ perro.raza | escape }}</li>
+        <li><b>Tamaño:</b> {{ perro.talla | escape }}</li>
+        <li><b>Nacido:</b> {{ perro.nacimiento | escape }}</li>
+        <li><b>Entrada:</b> {{ perro.entrada | escape }}</li>
+        <li><b>Situación:</b> {{ perro.situacion | escape }}</li>
+      </ul>
+    </article>
+    {% endfor %}
+    </ul>
+    </section>
+{% endfor %}

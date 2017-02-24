@@ -1,0 +1,14 @@
+- name: Homer
+  fullname: Homer Simpson
+  numero: 001
+  avatar: /assets/images/members/male.svg
+
+- name: Marge
+  fullname: Marge Simpson
+  numero: 002
+  avatar: /assets/images/members/female.svg
+
+- name: Bart
+  fullname: Bart Simpson
+  numero: 003
+  avatar: /assets/images/members/male.svg

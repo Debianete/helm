@@ -2,3 +2,52 @@
 // When having several themes, this file contains everything related to the
 // default one.
 // -----------------------------------------------------------------------------
+
+/**
+ * Active nav links
+ */
+.active {
+  background: lighten($brand-color, 40%);
+  color: $white;
+}
+
+.glass {
+  background: rgba(lighten($brand-color, 40%), 0.5);
+  border: none;
+  div > a {
+
+    color: white;
+  }
+}
+
+/**
+ * Styles for (main nav)sections titles
+ */
+.perros {
+  background: darken($brand-color, 15%);
+  color: $white;
+  text-shadow: 3px 3px 3px $text-color;
+}
+
+.colabora {
+  background: $brand-color-comp;
+  color: $white;
+  text-shadow: 3px 3px 3px $text-color;
+}
+
+.home {
+  background: darken($brand-color-cont, 30%);
+  color: $white;
+  text-shadow: 3px 3px 3px $text-color;
+}
+
+.blog {
+  background: $brand-color-cont;
+  color: $white;
+  text-shadow: 3px 3px 3px $text-color;
+}
+.adoptados {
+  background: red;
+  color: $white;
+  text-shadow: 3px 3px 3px $text-color;
+}
