@@ -11,30 +11,23 @@ excerpt: >
   est laborum.
 ---
 
-<h2>{{ page.title | escape }}</h2>
-
-{% assign adopta = site.perros | where: "adopta", "true" | sort: "order" %}
-{% assign groups = adopta | group_by: "talla" %}
+{% assign apadrina = site.perros | where: "adopta", "true" | sort: "order" %}
+{% assign groups = apadrina | group_by: "talla" %}
 
 {% for group in groups %}
     <h3 class="">{{ group.name | escape }}</h3>
-    <section class="">
-      <ul class="">
 
     {% for perro in group.items %}
-    <article class="">
-      <h4 class="">
-        <a class="" href="{{ perro.url | relative_url }}" title="{{ perro.nombre }}">
-          <img
-            class=""
-            src="{{ perro.avatar | relative_url }}"
-            alt="Imagen con la cara de {{ perro.nombre | escape }}"
-            title="Imagen con la cara de {{ perro.nombre | escape }}"
-            width="128"
-            height="128">
-          <span class="">{{ perro.nombre | escape }}</span>
-        </a>
-      </h4>
+    <article class="article">
+      <a class="absoluteCenter" href="{{ perro.url | relative_url }}" title="{{ perro.nombre | escape }}">
+        <h4 class="">{{ perro.nombre | escape }}</h4>
+      <img
+        class=""
+        src="{{ perro.avatar | relative_url }}"
+        alt="Imagen con la cara de {{ perro.nombre | escape }}"
+        title="Imagen con la cara de {{ perro.nombre | escape }}"
+        width="200"
+        height="200">
       <ul class="">
         <li><b>Sexo:</b> {{ perro.sexo | escape }}</li>
         <li><b>Raza:</b> {{ perro.raza | escape }}</li>
@@ -43,8 +36,7 @@ excerpt: >
         <li><b>Entrada:</b> {{ perro.entrada | escape }}</li>
         <li><b>Situación:</b> {{ perro.situacion | escape }}</li>
       </ul>
+    </a>
     </article>
     {% endfor %}
-    </ul>
-    </section>
 {% endfor %}

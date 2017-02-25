@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the articles component.
+// -----------------------------------------------------------------------------
+
+/**
+ * Styles for articles
+ */
+.article {
+  border-radius: 5px;
+  border: 1px solid $text-color;
+  box-shadow: 0 5px 8px rgba($text-color, 0.5);
+  margin-bottom: 1rem;
+  @include on-event {
+    box-shadow: 0 5px 8px $brand-color;
+  }
+  a {
+    text-decoration: none;
+  }
+  h4 {
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+.circle {
+  border: 1px solid $text-color;
+  border-radius: 50%;
+}

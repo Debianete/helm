@@ -5,3 +5,14 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+/**
+ * Basic typography style for headings
+ */
+h3 {
+  font-size: 150%;
+  background: pink;
+}
+
+h4 {
+  font-size: 150%;
+}

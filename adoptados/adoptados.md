@@ -1,5 +1,6 @@
 ---
-title: Nuestras victorias
+layout: perros
+title: Peludos felizmente adoptados
 section: Adoptados
 permalink: /adoptados/
 excerpt: >
@@ -9,24 +10,19 @@ excerpt: >
   ex ea commodo consequat.
 ---
 
-<h2>{{ page.title | escape }}</h2>
-
 {% assign perros = site.perros | sort: "order" %}
 {% for perro in perros %}
 {% if perro.adoptado %}
-<article class="">
-  <h3 class="">
-    <a class="" href="{{ perro.url | relative_url }}" title="{{ perro.nombre | escape }}">
-      <img
-        class=""
-        src="{{ perro.avatar | relative_url }}"
-        alt="Imagen con la cara de {{ perro.nombre | escape }}"
-        title="Imagen con la cara de {{ perro.nombre | escape }}"
-        width="128"
-        height="128">
-      <span class="">{{ perro.nombre | escape }}</span>
-    </a>
-  </h3>
+<article class="article">
+  <a class="absoluteCenter" href="{{ perro.url | relative_url }}" title="{{ perro.nombre | escape }}">
+    <h3 class="">{{ perro.nombre | escape }}</h3>
+  <img
+    class=""
+    src="{{ perro.avatar | relative_url }}"
+    alt="Imagen con la cara de {{ perro.nombre | escape }}"
+    title="Imagen con la cara de {{ perro.nombre | escape }}"
+    width="200"
+    height="200">
   <ul class="">
     <li><b>Sexo:</b> {{ perro.sexo | escape }}</li>
     <li><b>Raza:</b> {{ perro.raza | escape }}</li>
@@ -35,6 +31,7 @@ excerpt: >
     <li><b>Entrada:</b> {{ perro.entrada | escape }}</li>
     <li><b>Situación:</b> {{ perro.situacion | escape }}</li>
   </ul>
+</a>
 </article>
 {% endif %}
 {% endfor %}

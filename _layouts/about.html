@@ -4,7 +4,9 @@ layout: page
 
 {% include navs/about-nav.html %}
 
-<div class="">
+<h2 class="{{ page.section | downcase }}">{{ page.title | escape }}</h2>
+
+<div class="content">
 
   {{ content }}
 

@@ -3,9 +3,12 @@ layout: about
 title: Voluntarios
 section: Home
 permalink: /about/voluntarios/
+excerpt: >
+  Ut enim ad minim veniam,
+  quis nostrud exercitation
+  ullamco laboris nisi ut aliquip
+  ex ea commodo consequat.
 ---
-
-<h2>{{ page.title | escape }}</h2>
 
 <p>En la actualidad
   <b>{{ site.title | escape }}</b>
@@ -14,25 +17,19 @@ permalink: /about/voluntarios/
   voluntarios.
 </p>
 
-<a class="btn" href="{{ "/colabora/voluntarios/" | relative_url }}" title="Hazte Voluntario">Hazte Voluntario</a>
+<p><a class="btn" href="{{ "/colabora/voluntarios/" | relative_url }}" title="Hazte Voluntario">Hazte Voluntario</a></p>
 
-<section class="">
-  <ul class="">
     {% for voluntario in site.data.voluntarios %}
-    <li class="">
+    <article class="article absoluteCenter">
+      <h3 class="">{{ voluntario.name | escape }}</h3>
       <img
-        class=""
+        class="circle"
         src="{{ voluntario.avatar | relative_url }}"
         alt="Foto de {{ voluntario.name | escape }}"
         title="Foto de {{ voluntario.name | escape }}"
-        width="96"
-        height="96">
-      <h3 class="">
-        {{ voluntario.name | escape }}
-      </h3>
+        width="150"
+        height="150">
       <p><b>Nombre:</b> {{ voluntario.fullname | escape }}</p>
       <p><b>Tarea:</b> {{ voluntario.tarea | escape }}</p>
-    </li>
+    </article>
     {% endfor %}
-  </ul>
-</section>

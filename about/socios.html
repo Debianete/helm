@@ -3,9 +3,12 @@ layout: about
 title: Socios
 section: Home
 permalink: /about/socios/
+excerpt: >
+  Ut enim ad minim veniam,
+  quis nostrud exercitation
+  ullamco laboris nisi ut aliquip
+  ex ea commodo consequat.
 ---
-
-<h2>{{ page.title | escape }}</h2>
 
 <p>En la actualidad
   <b>{{ site.title | escape }}</b>
@@ -14,25 +17,19 @@ permalink: /about/socios/
   socios.
 </p>
 
-<a class="btn" href="{{ "/colabora/socios/" | relative_url }}" title="Hazte Socio">Hazte Socio</a>
+<p><a class="btn" href="{{ "/colabora/socios/" | relative_url }}" title="Hazte Socio">Hazte Socio</a></p>
 
-<section class="">
-  <ul class="">
-    {% for socio in site.data.socios %}
-    <li class="">
+{% for socio in site.data.socios %}
+  <article class="article absoluteCenter">
+    <h3 class="">{{ socio.name | escape }}</h3>
       <img
-        class=""
+        class="circle"
         src="{{ socio.avatar | relative_url }}"
         alt="Foto de {{ socio.name | escape }}"
         title="Foto de {{ socio.name | escape }}"
-        width="96"
-        height="96">
-      <h3 class="">
-        {{ socio.name | escape }}
-      </h3>
+        width="150"
+        height="150">
       <p><b>Nombre:</b> {{ socio.fullname | escape }}</p>
       <p><b>Número:</b> {{ socio.numero | escape }}</p>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+  </article>
+  {% endfor %}

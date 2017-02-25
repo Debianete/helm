@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 /**
- * Basic styles for buttons links
+ * Styles for buttons links
  */
 .btn {
   background: $brand-color;
@@ -22,7 +22,7 @@
     text-decoration: none;
     color: $white;
     //box-shadow: none;
-    background: lighten($brand-color, 40%);
+    background: lighten($brand-color, 25%);
     // border-color: $brand-color;
   }
 }

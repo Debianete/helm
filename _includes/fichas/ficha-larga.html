@@ -1,7 +1,5 @@
 <!-- PARA AÑADIR DEBAJO DE CADA FICHA DE PERRO -->
 
-<h2>Hola soy {{ page.nombre | escape }}!!!</h2>
-
 <figure class="polaroidFrame">
   <img
     class="polaroidImg"
@@ -11,7 +9,7 @@
   <figcaption class="polaroidTitle">Foto de {{ page.nombre | escape }}</figcaption>
 </figure>
 
-<p>Mi nombre es <b>{{ page.nombre | escape }}</b>!!!</p>
+<p>Hola!!! mi nombre es <b>{{ page.nombre | escape }}</b>!!!</p>
 
 <p>Soy un <b>{{ page.raza | escape }} {{ page.sexo | escape }}</b>, de tamaño <b>{{ page.talla | escape }}</b>,
   de color <b>{{ page.color | escape }}</b>y he nacido el <b>{{ page.nacimiento | escape }}</b>.</p>

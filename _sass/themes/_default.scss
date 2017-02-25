@@ -7,7 +7,7 @@
  * Active nav links
  */
 .active {
-  background: lighten($brand-color-comp, 20%);
+  background: lighten($brand-color, 20%);
   color: $white;
 }
 
@@ -24,30 +24,30 @@
  * Styles for (main nav)sections titles
  */
 .perros {
-  background: darken($brand-color, 15%);
+  background: rgba(darken($brand-color, 15%), 0.5);
   color: $white;
   text-shadow: 3px 3px 3px $text-color;
 }
 
 .colabora {
-  background: $brand-color-comp;
+  background: rgba($brand-color-comp, 0.5);
   color: $white;
   text-shadow: 3px 3px 3px $text-color;
 }
 
 .home {
-  background: darken($brand-color-cont, 30%);
+  background: rgba(darken($brand-color-cont, 30%), 0.5);
   color: $white;
   text-shadow: 3px 3px 3px $text-color;
 }
 
 .blog {
-  background: $brand-color-cont;
+  background: rgba($brand-color-cont, 0.5);
   color: $white;
   text-shadow: 3px 3px 3px $text-color;
 }
 .adoptados {
-  background: red;
+  background: rgba(teal, 0.5);
   color: $white;
   text-shadow: 3px 3px 3px $text-color;
 }

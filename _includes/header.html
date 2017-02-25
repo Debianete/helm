@@ -10,7 +10,11 @@
         height="32">
       {{ site.title | escape }}
     </a>
+
     <input id="menu-icon" type="checkbox">
+
+    {% include navs/main-nav.html %}
+
     <label class="burguer" for="menu-icon">
       <span>
         <svg viewBox="0 0 18 15" width="18px" height="15px">
@@ -20,8 +24,5 @@
         </svg>
       </span>
     </label>
-
-    {% include navs/main-nav.html %}
-
   </div>
 </header>

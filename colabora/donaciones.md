@@ -3,9 +3,12 @@ layout: colabora
 title: Donaciones
 section: Colabora
 permalink: /colabora/donaciones/
+excerpt: >
+  Ut enim ad minim veniam,
+  quis nostrud exercitation
+  ullamco laboris nisi ut aliquip
+  ex ea commodo consequat.
 ---
-
-## {{ page.title | escape }}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 

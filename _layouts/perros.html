@@ -14,7 +14,9 @@ layout: page
 
   {% endif %}
 
-<div class="">
+<h2 class="{{ page.section | downcase }}">{{ page.title | escape }}</h2>
+
+<div class="content">
 
   {{ content }}
 

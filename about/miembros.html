@@ -3,27 +3,24 @@ layout: about
 title: Miembros
 section: Home
 permalink: /about/miembros/
+excerpt: >
+  Ut enim ad minim veniam,
+  quis nostrud exercitation
+  ullamco laboris nisi ut aliquip
+  ex ea commodo consequat.
 ---
 
-<h2>{{ page.title | escape }}</h2>
-
-<section class="">
-  <ul class="">
     {% for member in site.data.members %}
-    <li class="">
+    <article class="article absoluteCenter">
+      <h3 class="">{{ member.name | escape }}</h3>
       <img
-        class=""
+        class="circle"
         src="{{ member.avatar | relative_url }}"
         alt="Foto de {{ member.name | escape }}"
         title="Foto de {{ member.name | escape }}"
-        width="96"
-        height="96">
-      <h3 class="">
-        {{ member.name | escape }}
-      </h3>
+        width="150"
+        height="150">
       <p><b>Nombre:</b> {{ member.fullname | escape }}</p>
       <p><b>Cargo:</b> {{ member.position | escape }}</p>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+  </article>
+  {% endfor %}

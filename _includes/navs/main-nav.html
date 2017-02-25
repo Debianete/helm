@@ -1,5 +1,5 @@
 
-<nav class="mainNav">
+<nav class="mainNav flexColumn">
   {% for item in site.main-nav %}
   <a class="navLink {% if page.url contains item[1] %}active{% endif %}" href="{{ item[1] | relative_url }}" title="{{ item[0] | escape }}">{{ item[0] | escape }}</a>
   {% endfor %}
