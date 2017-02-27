@@ -3,11 +3,9 @@ layout: about
 title: Quienes somos
 section: Home
 permalink: /about/
-excerpt: >
-  Ut enim ad minim veniam,
-  quis nostrud exercitation
-  ullamco laboris nisi ut aliquip
-  ex ea commodo consequat.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Somos una organización sin animo de lucro que protege y lucha por el bienestar animal,
+formada por varios jóvenes que creemos que se puede luchar contra el maltrato que reciben los animales en España.
+
+Nuestro objetivo es rescatarlos de ese sufrimiento en el que viven, rehabilitarlos y buscarles un hogar donde de verdad conozcan qué es una familia. 

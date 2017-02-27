@@ -4,10 +4,13 @@ title: Colabora
 section: Colabora
 permalink: /colabora/
 excerpt: >
-  Ut enim ad minim veniam,
-  quis nostrud exercitation
-  ullamco laboris nisi ut aliquip
-  ex ea commodo consequat.
+  No recibimos ninguna ayuda salvo las donaciones que nos llegan,
+  si quieres colaborar con nosotros hay muchas formas de hacerlo,
+  y no tiene que ser económicamente.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+No recibimos ninguna ayuda salvo las donaciones que nos llegan.
+
+Si quieres colaborar con nosotros hay muchas formas de hacerlo.
+
+No tiene que ser económicamente, simplemente sacando a pasear a uno de nuestros perros ya estas ayudando a su socialización para cuando sea adoptado.

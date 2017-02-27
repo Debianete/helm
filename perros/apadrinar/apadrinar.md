@@ -4,10 +4,17 @@ title: Apadrinar
 section: Perros
 permalink: /perros/apadrinar/
 excerpt: >
-  Duis aute irure dolor in
-  reprehenderit in voluptate
-  velit esse cillum dolore eu
-  fugiat nulla pariatur.
+  Muchas personas quieren tener un perro pero por diversos factores no les es posible,
+  para eso están los padrinos y las madrinas.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Apadrina!
+
+Muchas personas quieren tener un perro pero por diversos factores no les es posible,
+para eso están los padrinos y las madrinas.
+
+Puedes hacerte cargo de su alimentación o tratamiento medico,
+venir a verlo cuando quieras y sacarlo a pasear y jugar con el,
+te mantendremos informado en todo momento de su día a día.
+
+Le aras la vida mas fácil y el la tuya un poco mas feliz.
