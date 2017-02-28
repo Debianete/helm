@@ -2,22 +2,25 @@
 
   <div class="container">
 
-    <h2 class="">{{ site.title | escape }}</h2>
+    {% if site.email %}
+    <section>
+      <h2 class="">Contacto</h2>
+      <nav class="">
+        {% for item in site.email %}
+        <a class="" href="mailto:{{ item[1] }}" title="{{ item[0] | escape }}">{{ item[1] | escape }}</a>
+        {% endfor %}
+      </nav>
+    </section>
+    {% endif %}
 
-    <ul class="">
-      <li>
-        {% if site.author %}
-          {{ site.author | escape }}
-        {% else %}
-          {{ site.banner | escape }}
-        {% endif %}
-        </li>
-        {% if site.email %}
-        <li><a class="" href="mailto:{{ site.email }}" title="Envianos un email">{{ site.email | escape }}</a></li>
-        {% endif %}
-    </ul>
-
-    <p>{{ site.description | escape }}</p>
+    <section>
+      <h2>{% if site.banner %}
+        {{ site.banner | escape }}
+      {% else %}
+        {{ site.title | escape }}
+      {% endif %}</h2>
+      <p>{{ site.description | escape }}</p>
+    </section>
 
   </div>
 

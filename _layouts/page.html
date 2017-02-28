@@ -5,7 +5,11 @@ layout: default
 
 
   <header class="{{ page.section | downcase | escape }}">
-    <h1 class="">{{ page.section | escape }}</h1>
+    {% if page.section %}
+      <h1 class="">{{ page.section | escape }}</h1>
+    {% else %}
+      <h1 class="">{{ page.title | escape }}</h1>
+    {% endif %}
   </header>
 
   {{ content }}

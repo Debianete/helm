@@ -5,11 +5,20 @@ banner: "Huellas en la Montaña"
 description: >
   Somos una organización sin animo de lucro que protege y defiende el bienestar animal,
   formada por varios jóvenes que creemos que se puede luchar contra el maltrato animal.
-baseurl: ""
-url: ""
+baseurl: "/test"
+url: "http://huellasweb.org"
+
+# google_analytics: "test-analytics"
 
 # Contact settings
-email: helm@domain.com
+email:
+  adopciones: adopciones@huellasweb.org
+  acogidas: acogidas@huellasweb.org
+  eventos: eventos@huellasweb.org
+  voluntarios: voluntarios@huellasweb.org
+  donaciones: donaciones@huellasweb.org
+  fotos: fotos@huellasweb.org
+  consultas: contacto@huellasweb.org
 
 # Main Nav settings
 main-nav:
@@ -18,7 +27,7 @@ main-nav:
   Perros: /perros/
   Blog: /blog/
   Adoptados: /adoptados/
-  #Tienda: /tienda/
+  Contacto: /contacto/
 
 # Sub Navs settings
 about-nav:
