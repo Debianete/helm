@@ -5,8 +5,8 @@ banner: "Huellas en la Montaña"
 description: >
   Somos una organización sin animo de lucro que protege y defiende el bienestar animal,
   formada por varios jóvenes que creemos que se puede luchar contra el maltrato animal.
-baseurl: "/test"
-url: "http://huellasweb.org"
+baseurl: "/helm"
+url: "http://debianete.github.io"
 
 # google_analytics: "test-analytics"
 
