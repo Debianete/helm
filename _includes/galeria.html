@@ -17,3 +17,32 @@
   </p>
 </article>
 {% endfor %}
+<script src="{{ "/assets/js/modernizr-custom.js" | relative_url }}"></script>
+<script>
+// Comprueba si el navegador soporta VH
+// Si no lo soporta, aplica la altura del navegador
+// Incluso cuando cambia de tamaño
+// Y avisa con un alert de que no lo soporta
+
+//En caso contrario, solo avisa de que si lo soporta
+
+if (Modernizr.cssvhunit) {
+
+  (window.onresize=function() {
+    var height      = window.screen.height,
+        full_height = document.getElementsByClassName('fullHeight');
+
+    for (var i=0; i < full_height.length; i++) {
+
+      full_height[i].setAttribute('style' , 'min-height:' + height + 'px;');
+
+    };
+
+    alert('Este navegador «NO» soporta VH-VW');
+
+  }).call(this);
+
+} else {
+  alert('Este navegador «SI» soporta VH-VW');
+}
+</script>

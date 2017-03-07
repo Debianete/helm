@@ -9,7 +9,7 @@ excerpt: >
   sed do eiusmod tempor incididunt
   ut labore et dolore magna aliqua.
 ---
-
+<div class="articles">
 {% assign perros = site.perros | sort: "order" %}
 {% for perro in perros %}
 {% if perro.acogida %}
@@ -34,4 +34,4 @@ excerpt: >
 </a>
 </article>
 {% endif %}
-{% endfor %}
+{% endfor %}</div>

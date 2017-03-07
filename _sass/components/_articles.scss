@@ -5,7 +5,24 @@
 /**
  * Styles for articles
  */
+ .articles:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ .articles {
+   clear: both;
+   /*margin-bottom: 7rem;*/
+ }
+
 .article {
+  //position: relative;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+
   border-radius: 5px;
   border: 1px solid $text-color;
   box-shadow: 0 5px 8px rgba($text-color, 0.5);
@@ -17,13 +34,32 @@
     text-decoration: none;
   }
   h4 {
-    text-align: center;
+    //text-align: center;
   }
   ul {
     list-style: none;
     padding-left: 0;
   }
 }
+
+@media screen and (min-width: 37.5em) {
+  .article {
+    float: left;
+    margin-left: 2.5%;
+    width: 46%;
+  }
+}
+@media screen and (min-width: 75em) {
+  .article {
+    float: left;
+    width: 30%;
+  }
+}
+
+
+
+
+
 
 .circle {
   border: 1px solid $text-color;

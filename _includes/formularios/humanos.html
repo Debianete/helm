@@ -1,8 +1,8 @@
 <form method="post" action="archivo_de_envio_{{ include.nuevo | escape }}.php">
-  <input id="name" type="text" name="nombre" placeholder="* Nombre " />
-  <input id="email" type="email" name="email" placeholder="* Email " />
-  <textarea id="message" name="mensaje" rows="8">
+  <input type="text" name="nombre" placeholder="* Nombre " />
+  <input type="email" name="email" placeholder="* Email " />
+  <textarea name="mensaje" rows="8">
     Estoy interesado/a en hacerme {{ include.nuevo | escape }}/a de {{ site.title | escape }} ( {{ site.banner | escape }} ) bla bla bla ...
   </textarea>
-  <input id="send" type="submit" value="Hacerme {{ include.nuevo | capitalize | escape }}" />
+  <input type="submit" value="Hacerme {{ include.nuevo | capitalize | escape }}" />
 </form>

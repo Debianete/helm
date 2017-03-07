@@ -16,8 +16,8 @@ excerpt: >
 
 {% for group in groups %}
     <h3 class="">{{ group.name | escape }}</h3>
-
-    {% for perro in group.items %}
+      <div class="articles">
+      {% for perro in group.items %}
     <article class="article">
       <a class="absoluteCenter" href="{{ perro.url | relative_url }}" title="{{ perro.nombre | escape }}">
         <h4 class="">{{ perro.nombre | escape }}</h4>
@@ -39,4 +39,5 @@ excerpt: >
     </a>
     </article>
     {% endfor %}
+    </div>
 {% endfor %}

@@ -45,6 +45,12 @@ nav {
     position: inherit;
     border: none;
 
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
 
     -webkit-box-align: center;
