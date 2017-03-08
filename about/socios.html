@@ -31,5 +31,9 @@ excerpt: >
         height="150">
       <p><b>Nombre:</b> {{ socio.fullname | escape }}</p>
       <p><b>Número:</b> {{ socio.numero | escape }}</p>
+      {% if socio.contact %}<p>
+        {% if socio.contact.twitter %}{% include social/icon-twitter.html username=socio.contact.twitter %}{% endif %}
+        {% if socio.contact.facebook %}{% include social/icon-facebook.html username=socio.contact.facebook %}{% endif %}
+      </p>{% endif %}
   </article>
   {% endfor %}

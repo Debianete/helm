@@ -1,8 +1,3 @@
----
-layout: null
-permalink: /colabora/socios/archivo_de_envio_voluntario.php
----
-
 <?php
 
 if (isset($_POST['nombre']) && !empty($_POST['nombre']) &&
@@ -13,12 +8,13 @@ if (isset($_POST['nombre']) && !empty($_POST['nombre']) &&
 
 		$nombre = $_POST['nombre'];
 		$email = $_POST['email'];
-		$asunto = "Nuevo Voluntario";
+		$perro = $_POST['perro'];
+		$asunto = "Nueva Adopción";
 
 		$ip = $_SERVER['REMOTE_ADDR'];
 		$fecha = date ('d-m-Y');
 		$hora = date ('H:i:s');
-		$destino = "voluntarios@huellasweb.org";
+		$destino = "adopciones@huellasweb.org";
 
 		$headers = "From: " . $email . " \r\n";
 		$headers .= "X-Mailer: PHP/" . phpversion() . " \r\n";
@@ -27,14 +23,15 @@ if (isset($_POST['nombre']) && !empty($_POST['nombre']) &&
 
 		$texto = $_POST['mensaje'];
 
-		$mensaje = "<h1 style='background:#34495E;color:white;text-align:center;'>Formulario de Nuevos Voluntarios</h1>" .
+		$mensaje = "<h1 style='background:#34495E;color:white;text-align:center;'>Formulario de Nueva Adopción</h1>" .
+		"<h2 style='background:#34495E;color:white;text-align:center;'>" . $perro . "</h2>" .
 		"<p style='color:#34495E;' ><b>Nombre :</b> " . $nombre . "</p>" .
 		"<p style='color:#34495E;' ><b>Email :</b> " . $email . "</p>" .
 		"<p style='color:#34495E;' ><b>Asunto :</b> " . $asunto . "</p>" .
 		"<p style='color:#34495E;' ><b>Fecha :</b> " . $fecha . "<b>&nbsp;&nbsp;&nbsp;Hora :</b> " . $hora . "<b>&nbsp;&nbsp;&nbsp;IP :</b> " . $ip . "</p>" .
 		"<p style='color:#34495E;' >" . $texto . "</p>";
 
-		mail($destino, $asunto, $mensaje, $headers);
+		mail($destino, utf8_decode($asunto), $mensaje, $headers);
 
 		header ('Location: ../socios/');
 

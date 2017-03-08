@@ -22,5 +22,9 @@ excerpt: >
         height="150">
       <p><b>Nombre:</b> {{ member.fullname | escape }}</p>
       <p><b>Cargo:</b> {{ member.position | escape }}</p>
+      {% if member.contact %}<p>
+        {% if member.contact.twitter %}{% include social/icon-twitter.html username=member.contact.twitter %}{% endif %}
+        {% if member.contact.facebook %}{% include social/icon-facebook.html username=member.contact.facebook %}{% endif %}
+      </p>{% endif %}
   </article>
   {% endfor %}

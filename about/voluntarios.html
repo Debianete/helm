@@ -31,5 +31,9 @@ excerpt: >
         height="150">
       <p><b>Nombre:</b> {{ voluntario.fullname | escape }}</p>
       <p><b>Tarea:</b> {{ voluntario.tarea | escape }}</p>
+      {% if voluntario.contact %}<p>
+        {% if voluntario.contact.twitter %}{% include social/icon-twitter.html username=voluntario.contact.twitter %}{% endif %}
+        {% if voluntario.contact.facebook %}{% include social/icon-facebook.html username=voluntario.contact.facebook %}{% endif %}
+      </p>{% endif %}
     </article>
     {% endfor %}

@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: /colabora/socios/archivo_de_envio_voluntario.php
+permalink: /colabora/socios/archivo_de_envio_socio.php
 ---
 
 <?php
@@ -13,7 +13,7 @@ if (isset($_POST['nombre']) && !empty($_POST['nombre']) &&
 
 		$nombre = $_POST['nombre'];
 		$email = $_POST['email'];
-		$asunto = "Nuevo Voluntario";
+		$asunto = "Nuevo Socio";
 
 		$ip = $_SERVER['REMOTE_ADDR'];
 		$fecha = date ('d-m-Y');
@@ -27,7 +27,7 @@ if (isset($_POST['nombre']) && !empty($_POST['nombre']) &&
 
 		$texto = $_POST['mensaje'];
 
-		$mensaje = "<h1 style='background:#34495E;color:white;text-align:center;'>Formulario de Nuevos Voluntarios</h1>" .
+		$mensaje = "<h1 style='background:#34495E;color:white;text-align:center;'>Formulario de Nuevos Socios</h1>" .
 		"<p style='color:#34495E;' ><b>Nombre :</b> " . $nombre . "</p>" .
 		"<p style='color:#34495E;' ><b>Email :</b> " . $email . "</p>" .
 		"<p style='color:#34495E;' ><b>Asunto :</b> " . $asunto . "</p>" .

@@ -2,21 +2,31 @@
   fullname: Emma Pérez
   position: Presidenta
   avatar: /assets/images/members/female.svg
+  contact:
+    facebook: emma-helm
+    twitter: presi-helm
 
 - name: Sara
   fullname: Sarabel Blablabla
   position: Vicepresidenta
   avatar: /assets/images/members/female.svg
+  contact:
+    facebook: sara-helm
+    twitter: vice-helm
 
 - name: Dani
   fullname: Daniel Blablabla
   position: Tesorero
   avatar: /assets/images/members/male.svg
+  contact:
+    twitter: tesorero-helm
   
 - name: Montse
   fullname: Montserrat Blablabla
   position: Secretaria
   avatar: /assets/images/members/female.svg
+  contact:
+    facebook: secre-helm
   
 - name: Antonio
   fullname: Antonio Blablabla

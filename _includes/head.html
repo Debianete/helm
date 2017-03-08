@@ -24,6 +24,17 @@
   <meta name="theme-color" content="#ff00ff">
 <!-- FAVICONS -->
 
+<!-- OG -->
+<meta property="og:locale" content="es_ES">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description | | strip_html | normalize_whitespace | truncate: 160 | escape }}{% endif %}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | abosulete_url }}">
+<!-- 320 x 168 -->
+<meta property="og:image" content="{{ "/assets/images/og-image.png" | relative_url }}">
+<!-- OG -->
+
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}

@@ -26,3 +26,40 @@
     // border-color: $brand-color;
   }
 }
+
+
+/**
+ * Icons
+ */
+
+.icon > svg {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.5em;
+  width: 1.5em;
+  margin-right:0.50rem;
+  
+  @include on-event {
+      cursor:pointer;
+}
+
+  path {
+    fill: $text-color;
+  }
+}
+.icon--twitter > svg {
+    path {
+    fill: #326ada;
+    @include on-event {
+        fill: rgba(#326ada, 0.5);
+    }
+  }
+}
+.icon--facebook > svg {
+    path {
+    fill: #3b5998;
+    @include on-event {
+        fill: rgba(#3b5998, 0.5);
+    }
+  }
+}

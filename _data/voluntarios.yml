@@ -2,12 +2,17 @@
   fullname: Sebas-tian Timao
   tarea: Limpieza
   avatar: /assets/images/members/male.svg
+  contact:
+    twitter: timao
 
 - name: Masca
   fullname: Masca Broncete
   tarea: Mantenimiento
   avatar: /assets/images/members/male.svg
-
+  contact:
+    facebook: masca
+    twitter: masca
+    
 - name: Aitor
   fullname: Aitor Tilla
   tarea: Stand
@@ -17,6 +22,8 @@
   fullname: Daniel Blablabla
   tarea: Limpieza
   avatar: /assets/images/members/male.svg
+  contact:
+    twitter: dani-helm2
 
 - name: Montse
   fullname: Montserrat Blablabla

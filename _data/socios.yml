@@ -2,13 +2,20 @@
   fullname: Homer Simpson
   numero: 001
   avatar: /assets/images/members/male.svg
+  contact:
+    twitter: HommeR
 
 - name: Marge
   fullname: Marge Simpson
   numero: 002
   avatar: /assets/images/members/female.svg
+  contact:
+    facebook: MargE
 
 - name: Bart
   fullname: Bart Simpson
   numero: 003
   avatar: /assets/images/members/male.svg
+  contact:
+    facebook: bart
+    twitter: bart

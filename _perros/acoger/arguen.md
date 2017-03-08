@@ -2,28 +2,13 @@
 nombre:     Argüen
 sexo:       Hembra
 color:      Blanco, Gris y Negro
-nacimiento: 10-11-2016
-avatar:     /assets/images/perros/avatar/dog.svg
-cabecera:   /assets/images/perros/cabecera/cabecera.jpg
-###
-# Filtros
-###
-adopta:   false # poner en 'true' la opción correcta pueden ser 1, 2, o las 3
-apadrina: false # poner en 'true' la opción correcta pueden ser 1, 2, o las 3
-acogida:  true # poner en 'true' la opción correcta pueden ser 1, 2, o las 3
+raza:       Galgo
+talla:      Mediano    # opciones: Grande - Mediano - Pequeño
+nacimiento: 10-11-2016 # DD-MM-AAAA
 
-order: 1
-
-raza:  Galgo
-talla: Mediano # opciones: Grande - Mediano - Pequeño
-
-galeria: false # si tiene galería poner en 'true'
-###
-# Filtros
-###
-entrada:   11-10-2011
-origen:    Calle
-situacion: Albergue
+entrada:    11-10-2011 # DD-MM-AAAA
+origen:     Calle
+situacion:  Albergue
 
 chip:         si
 castrado:     si
@@ -35,10 +20,37 @@ caracter:
   miedos:     Truenos, Fuegos artificiales
   manias:     Morder pelotas, Cagar, Mear
 
-historia: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+historia: > # "OJO" escribir en la línea de abajo, con 2 espacios al principio
+  Aquí se escribe la historia del perro, dejando dos espacios
+  al principio de cada línea, tal cual está escrito este
+  ejemplo.
+
+###
+# Filtros
+###
+
+adopta:   false # poner en 'true' la opción correcta, pueden ser 1, 2, o las 3
+apadrina: false # poner en 'true' la opción correcta, pueden ser 1, 2, o las 3
+acogida:  true  # poner en 'true' la opción correcta, pueden ser 1, 2, o las 3
+
+order:    1     # habilita la prioridad sobre las demás fichas
+
+galeria:  false # si tiene ficha de galería, poner en 'true'
+
+###
+# Filtros
+###
+
+###
+# Imágenes
+###
+
+avatar:     /assets/images/perros/avatar/dog.svg        # foto de la cara
+cabecera:   /assets/images/perros/cabecera/cabecera.jpg # foto cabecera ficha
+
+###
+# Imágenes
+###
 ---
 
 {% include fichas/ficha-larga.html %}
