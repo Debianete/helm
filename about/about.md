@@ -14,8 +14,8 @@ los rehabilitamos y buscamos para ellos una familia donde conozcan la verdadera 
 Borrar toda huella que pueda quedar en ellos de la mala vida que ha podido conocer y enseñarles
 a vida que merecen vivir cada uno de ellos.
 
-
-## ¿QUÉ HACEMOS?
+{:.home}
+## ¿Que Hacemos?
 
 **Nuestra labor, totalmente altruista**, es dedicarnos a **“rescatar” perros**.
 Perros abandonados, que en muchas ocasiones son maltratados.
