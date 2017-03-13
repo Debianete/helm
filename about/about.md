@@ -13,3 +13,13 @@ los rehabilitamos y buscamos para ellos una familia donde conozcan la verdadera 
 **Nuestra finalidad es su felicidad, su salud; en definitiva, su bienestar** en todos los sentidos.
 Borrar toda huella que pueda quedar en ellos de la mala vida que ha podido conocer y enseñarles
 a vida que merecen vivir cada uno de ellos.
+
+
+## ¿QUÉ HACEMOS?
+
+**Nuestra labor, totalmente altruista**, es dedicarnos a **“rescatar” perros**.
+Perros abandonados, que en muchas ocasiones son maltratados.
+
+Nuestra primera labor es **sacarlos de cualquier contexto donde su bienestar pueda verse amenazado**.
+Pasan a vivir **en nuestro albergue**, donde **se recuperan tanto de las heridas físicas como psicológicas**;
+donde **reciben la atención veterinaria necesaria** y donde empiezan a conocer la parte buena de las personas.
