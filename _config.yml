@@ -71,6 +71,10 @@ collections:
   galerias:
     output: true
     permalink: /perros/galerias/:path/
+    
+# Default Sections Image
+default-image: /assets/images/sections/home.jpg
+default-image-alt: Imagen de cabecera
 
 # Defaults settings
 defaults:
