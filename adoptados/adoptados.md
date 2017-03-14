@@ -8,6 +8,7 @@ excerpt: >
   quis nostrud exercitation
   ullamco laboris nisi ut aliquip
   ex ea commodo consequat.
+cabecera: /assets/images/sections/adoptados.jpg
 ---
 
 {% assign perros = site.perros | sort: "order" %}

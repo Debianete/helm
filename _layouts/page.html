@@ -4,11 +4,17 @@ layout: default
 
 
 
-  <header class="{{ page.section | downcase | escape }}">
+  <header class="{% if page.section %}{{ page.section | downcase | escape }}{% else %}default{% endif %} midScreen leftCenter">
+    <img
+      class="imgScreen"
+      src="{% if page.cabecera %}{{ page.cabecera | relative_url }}{% else %}{{ site.default-image | relative_url }}{% endif %}"
+      alt="{% if page.alt %}{{ page.alt | escape }}{% else %}{{ site.default-image-alt | escape }}{% endif %}"
+      title="{% if page.alt %}{{ page.alt | escape }}{% else %}{{ site.default-image-alt | escape }}{% endif %}"
+    >
     {% if page.section %}
       <h1 class="">{{ page.section | escape }}</h1>
     {% else %}
-      <h1 class="">{{ page.title | escape }}</h1>
+    <h1 class="">{{ page.title | escape }}</h1>
     {% endif %}
   </header>
 

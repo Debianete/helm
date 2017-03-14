@@ -7,6 +7,7 @@ excerpt: >
   No recibimos ninguna ayuda salvo las donaciones que nos llegan,
   si quieres colaborar con nosotros hay muchas formas de hacerlo,
   y no tiene que ser económicamente.
+cabecera: /assets/images/sections/colabora.png
 ---
 
 No recibimos ninguna ayuda salvo las donaciones que nos llegan.

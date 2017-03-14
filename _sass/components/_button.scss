@@ -5,18 +5,23 @@
 /**
  * Styles for buttons links
  */
+
+ // http://codepen.io/benague/pen/bCkyr
+
 .btn {
+  border: none;
   background: $brand-color;
-  //border: 1px solid $brand-color-comp;
   border-radius: 5px;
   display: inline-block;
   color: $white;
   padding: 0.50rem 1rem;
-  transition: 0.5s;
+  transition: 0.3s;
   //text-shadow: 1px 1px 1px $text-color;
   //box-shadow: 0 3px 8px rgba($text-color, 0.8);
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
+  box-shadow: 0px 5px 3px 0px rgba($text-color, 0.5);
+  position: relative;
 
   @include on-event {
     text-decoration: none;
@@ -24,6 +29,27 @@
     //box-shadow: none;
     background: lighten($brand-color, 25%);
     // border-color: $brand-color;
+    &:active {
+      transform: translate(0px, 5px);
+      -webkit-transform: translate(0px, 5px);
+      box-shadow: 0px 1px 0px 0px;
+    }
+  }
+}
+
+.btn-blue {
+  @extend .btn;
+  background-color: $brand-color-comp;
+  @include on-event {
+    background-color: lighten($brand-color-comp, 15%);
+  }
+}
+
+.btn-yellow {
+  @extend .btn;
+  background-color: $brand-color-cont;
+  @include on-event {
+    background-color: lighten($brand-color-cont, 15%);
   }
 }
 
@@ -38,7 +64,7 @@
   height: 1.5em;
   width: 1.5em;
   margin-right:0.50rem;
-  
+
   @include on-event {
       cursor:pointer;
 }

@@ -6,6 +6,7 @@ permalink: /perros/adoptar/
 excerpt: >
   Existen muchas buenas razones por las cuales adoptar.
   Es un acto de gran humanidad adoptar un animal que ha vivido situaciones y condiciones crueles.
+cabecera: /assets/images/sections/perros.jpg
 ---
 
 ## Beneficios de adoptar un perro.
@@ -20,7 +21,7 @@ También promueve la socialización dejando a un lado la timidez, provocan la in
 Llenan de vida la casa y con ello se recupera la vitalidad, las ganas de vivir y de hacer cosas saliendo de la apatía.
 
 Un perro desarrolla en los niños el sentido de responsabilidad al depender de él la vida de otro ser vivo, debe preocuparse de su alimentación, de su salud, de sus paseos (siempre bajo la supervisión y con la ayuda de un adulto), y le obligará en alguna ocasión a renunciar a algo por tener que ocuparse de su mascota.
- 
+
 Los perros han sido utilizados como terapia en los niños con retraso escolar o dificultades de aprendizaje al estimular la responsabilidad, autoestima y mejorar las relaciones interpersonales.
 
 La decisión de adoptar un perro en nuestro hogar debe ser razonada y consensuada entre todos los miembros de la familia.

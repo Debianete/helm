@@ -1,12 +1,12 @@
-<header class="absoluteCenter headerGaleria">
+<header class="absoluteCenter fullScreen">
   <h1>Galeria de {{ page.nombre | escape }}</h1>
   <p>{{ page.description | escape }}</p>
 </header>
 
 {% for foto in page.fotos %}
-<article class="absoluteCenter articleGaleria">
+<article class="absoluteCenter fullScreen">
   <img
-    class="imgGaleria"
+    class="imgScreen"
     src="{{ foto.source | relative_url }}"
     alt="{{ foto.title | escape }}"
     title="{{ foto.title | escape }}">
@@ -17,7 +17,7 @@
   </p>
 </article>
 {% endfor %}
-<script src="{{ "/assets/js/modernizr-custom.js" | relative_url }}"></script>
+<!-- <script src="{{ "/assets/js/modernizr-custom.js" | relative_url }}"></script>
 <script>
 // Comprueba si el navegador soporta VH
 // Si no lo soporta, aplica la altura del navegador
@@ -45,4 +45,4 @@ if (Modernizr.cssvhunit) {
 } else {
   alert('Este navegador «SI» soporta VH-VW');
 }
-</script>
+</script> -->

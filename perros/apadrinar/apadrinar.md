@@ -6,6 +6,7 @@ permalink: /perros/apadrinar/
 excerpt: >
   Muchas personas quieren tener un perro pero por diversos factores no les es posible,
   para eso están los padrinos y las madrinas.
+cabecera: /assets/images/sections/perros.jpg
 ---
 
 ## Apadrina!

@@ -6,6 +6,7 @@ permalink: /colabora/donaciones/
 excerpt: >
   Puntos de recogida donaciones
   ( mantas, toallas, medicacion, juguetes, etc... )
+cabecera: /assets/images/sections/colabora.png
 ---
 
 Puntos de recogida donaciones ( mantas, toallas, medicacion, juguetes, etc... )
@@ -21,7 +22,7 @@ Puntos de recogida donaciones ( mantas, toallas, medicacion, juguetes, etc... )
 
 ### El Campello
 
-* Medio ambiente **Ayuntamiento El Campello** c/ Alcalde Oncina Giner 7, El Campello. 
+* Medio ambiente **Ayuntamiento El Campello** c/ Alcalde Oncina Giner 7, El Campello.
 * Tienda Para Animales **Gosigat** c/ La Mar 21, El Campello.
 
 ### San vicente
